@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Book Note Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body style="height: fit-content;">
+  <header>
+    <h1>My Book Note Tracker</h1>
+    <a href="/add" class="add-button">+ Add a New Book</a>
+  </header>
+
+  <div class="container">
+    <div class="book-grid">
+      <% books.forEach(book => { %>
+        <div class="book-card">
+          <img src="<%= book.cover_url %>" alt="<%= book.title %> Cover">
+          <div class="book-info">
+            <h3><%= book.title %></h3>
+            <p><strong>Author:</strong> <%= book.author %></p>
+            <p class="rating">⭐ Rating: <%= book.rating %>/10</p>
+            <p><%= book.review %></p>
+            <div class="actions">
+              <form action="/edit/<%= book.id %>" method="get">
+                <button>Edit</button>
+              </form>
+              <form action="/delete/<%= book.id %>" method="post">
+                <button style="background:#ef4444;">Delete</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+
+</body>
+</html>
