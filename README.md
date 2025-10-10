@@ -25,6 +25,7 @@ It enables users to track their family travels conveniently.
 
 - [x] **Other Tools**:
   - [x] Axios (for HTTP requests)
+  - [x] pgAdmin4 (postgreSQL)
 
 ## Key Features 🚀
 - [x] **Add Books** — Enter a book title and automatically fetch its cover via the Open Library API.  
