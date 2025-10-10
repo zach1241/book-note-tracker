@@ -24,8 +24,6 @@ It enables users to track their family travels conveniently.
   - [x] PostgreSQL
 
 - [x] **Other Tools**:
-  - [x] Node.js
-  - [x] Axios (for HTTP requests)
   - [x] Axios (for HTTP requests)
 
 ## Key Features 🚀
