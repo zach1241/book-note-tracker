@@ -13,7 +13,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "book_notes",
-  password: "7s9KZR1#M",
+  password: "Your_Own_Password",
   port: 5432,
 });
 db.connect();
@@ -78,3 +78,4 @@ app.post("/edit/:id", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
